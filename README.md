@@ -1,5 +1,20 @@
 # Dataplex
 
+Dataplex is Google Cloud's intelligent data fabric that unifies distributed data across data lakes, data warehouses, and data marts. It provides centralized data management, governance, and discovery without moving or duplicating data.
+Key capabilities:
+
+🏗️ Organize data using Lakes → Zones → Assets hierarchy
+
+🔍 Automatic metadata discovery and cataloging
+
+✅ Data quality monitoring and validation
+
+🔗 Data lineage tracking across BigQuery and Cloud Storage
+
+🔐 Unified security and access control
+
+This tutorial will guide you through setting up and using Dataplex to manage your data estate on GCP.
+
 # Data Catalog
 
 Data Catalog in Dataplex provides a unified discovery platform that helps both technical and non-technical users quickly find and access data across the organization through searchable metadata. It ensures data quality consistency and regulatory compliance while reducing unnecessary costs, and enables organizations to trace data lineage to understand where data originated, how it was transformed, and who used it. Users can add rich text table descriptions, assign data stewards for metadata management, and establish clear ownership to improve trust and confidence in data assets. Additionally, Data Catalog integrates with Sensitive Data Protection to automatically identify and tag sensitive data using tag templates, centralizing governance and reducing search friction across the organization.
