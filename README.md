@@ -111,7 +111,11 @@ Creating and using a data quality scan consists of the following steps:
     Analyze data quality scan results
     Set up monitoring and alerting
     Troubleshoot data quality failures
-Here is an example where we scan users table. First, we have to configure validation rules. Use SQL to create your own rules or use built-in rule types.
+Here is an example where we scan users table. First, there is an option to schedule the scans.
+
+<img width="1606" height="868" alt="image" src="https://github.com/user-attachments/assets/e4d764c5-cae6-4ae9-aa6c-8bfbc211118e" />
+
+Then we have to configure validation rules. Use SQL to create your own rules or use built-in rule types.
 
 <img width="1877" height="640" alt="image" src="https://github.com/user-attachments/assets/8fe46c4b-e461-44b2-bfaf-588d8de11b41" />
 
