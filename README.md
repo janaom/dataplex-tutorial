@@ -54,7 +54,7 @@ Data Lineage in Dataplex provides automated tracking of data flows across your G
 ![20260202_173055](https://github.com/user-attachments/assets/0a17f706-3bc1-4e62-ade0-fc0a2616942a)
 
 
-In this example, I created 4 additional tables and joined them to demonstrate data lineage and trace data origins. On the right, you can see the BigQuery queries used to join these tables. Here is an example:
+In this example, I created additional tables and joined them to demonstrate data lineage and trace data origins. On the right, you can see the BigQuery queries used to join these tables. Here is an example:
 
 ```sql
 CREATE OR REPLACE TABLE `elt-project-482220.bq_data_masking_demo.users_with_purchases` AS
