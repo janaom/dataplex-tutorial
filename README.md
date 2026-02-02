@@ -1,6 +1,7 @@
 # Dataplex
 
 Dataplex is Google Cloud's intelligent data fabric that unifies distributed data across data lakes, data warehouses, and data marts. It provides centralized data management, governance, and discovery without moving or duplicating data.
+
 Key capabilities:
 
 🏗️ Organize data using Lakes → Zones → Assets hierarchy
@@ -14,6 +15,8 @@ Key capabilities:
 🔐 Unified security and access control
 
 This tutorial will guide you through setting up and using Dataplex to manage your data estate on GCP.
+
+I am using the same BQ table as in the previous tutorial [bq-data-masking-example](https://github.com/janaom/bq-data-masking-example).
 
 # Data Catalog
 
@@ -43,6 +46,31 @@ Data profiling automatically detects sensitive information and lets you set acce
 Here is an example of Data Profile of users table.
 
 <img width="1886" height="890" alt="image" src="https://github.com/user-attachments/assets/62b991b6-b447-4992-9dbd-ae18a9da4ad1" />
+
+# Data Lineage 
+
+Data Lineage in Dataplex provides automated tracking of data flows across your Google Cloud environment. It visualizes how data moves between BigQuery tables, Cloud Storage buckets, and other GCP services, showing upstream sources and downstream consumers. This enables teams to understand data dependencies, assess the impact of schema changes, ensure compliance, and troubleshoot data quality issues by tracing data back to its origin.
+
+![20260202_173055](https://github.com/user-attachments/assets/0a17f706-3bc1-4e62-ade0-fc0a2616942a)
+
+
+In this example, I created 4 additional tables and merged them to demonstrate data lineage and trace data origins. On the right, you can see the BigQuery queries used to merge these tables. Here is an example:
+
+```sql
+CREATE OR REPLACE TABLE `elt-project-482220.bq_data_masking_demo.users_with_purchases` AS
+SELECT 
+  u.id, 
+  u.first_name, 
+  u.last_name, 
+  p.item, 
+  p.amount, 
+  p.purchase_date
+FROM `elt-project-482220.bq_data_masking_demo.users` AS u
+INNER JOIN `elt-project-482220.bq_data_masking_demo.user_purchases` AS p 
+  ON u.id = p.user_id;
+```
+
+You can also view detailed information about each table, filter connections by column name, and use upstream/downstream directions with time range filters.
 
 # Glossaries
 
