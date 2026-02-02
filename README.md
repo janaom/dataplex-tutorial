@@ -77,8 +77,11 @@ You can also view detailed information about each table, filter connections by c
 Use a business glossary to establish a standardized vocabulary for your data assets, which reduces ambiguity and improves data discovery and governance across your organization. By creating a common language for data using Dataplex Universal Catalog business glossary, you can achieve the following:
 
 Define a clear hierarchy of business categories and terms.
+
 Link concepts using synonyms and show relationships between terms.
+
 Search for data resources based on business concepts, not just technical names.
+
 Dataplex Universal Catalog business glossary helps streamline data discovery and reduce ambiguity, resulting in better governance, more accurate analysis, and faster insights.
 
 Here is an example of 'Customer Transaction Data Glossary'.
