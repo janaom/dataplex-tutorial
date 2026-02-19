@@ -258,6 +258,53 @@ Check Template inside the details.
 
 <img width="1912" height="779" alt="Screenshot 2026-02-19 171821" src="https://github.com/user-attachments/assets/3439095d-234c-449e-a5b7-73937e1942a5" />
 
+# Example
+
+Here is an example demonstrating how elements connect within Dataplex.
+
+![20260219_213521](https://github.com/user-attachments/assets/db808f8c-d3a9-4f78-bf88-eb17f7e01ccd)
+
+Within the Dataplex Business Glossary, we have established the 'Financial Transaction Data Glossary'. This glossary is organized into two primary categories (or sub-glossaries):
+
+    'Raw Financial Transaction Data - Source System Layer'
+    'Transformed Financial Transaction Data - Analytics Layer'
+
+<img width="1906" height="849" alt="Screenshot (183)" src="https://github.com/user-attachments/assets/87b322ad-00b4-4dbd-9757-af61cfefa884" />
+
+<img width="1896" height="860" alt="Screenshot (184)" src="https://github.com/user-attachments/assets/72b7f3dd-7bf4-417a-a6d5-957dafaedb69" />
+
+The first one focuses on the raw data. You can see all the fields (terms) pulled directly from that source table, like ID1 and String1.
+
+<img width="1898" height="844" alt="Screenshot (185)" src="https://github.com/user-attachments/assets/f01d1bac-8d90-4ad6-8a1f-fdf5e95ccd7d" />
+
+We use dbt for data transformation. Following this process, the second category reflects a new table created from the raw data.
+
+<img width="1898" height="847" alt="Screenshot (186)" src="https://github.com/user-attachments/assets/5b061139-160b-4468-9a64-86defd559d45" />
+
+When examining any specific term, you will find detailed information: a description, an overview, attached Aspects (like my 'Data Stewardship Info'), related entries, and related terms. For example, a term in the transformed layer is linked as a 'Related Term' to its corresponding field, such as ID1, in the raw data.
+
+<img width="1899" height="852" alt="Screenshot (187)" src="https://github.com/user-attachments/assets/fa8eeada-e13c-4a40-93e1-db3d6a0583f1" />
+
+Next, we will see the transformed data table.
+
+<img width="1898" height="751" alt="Screenshot (188)1" src="https://github.com/user-attachments/assets/9d14d63a-e996-44a6-8fb8-fbc1f60f51b7" />
+
+As you can see here, the asset is enriched with critical governance information. Here you can see who is data governor, business owner, data classification, data lifecycle, if it's encrypted, has PII, data owner email, etc.
+
+<img width="1889" height="848" alt="Screenshot (189)1" src="https://github.com/user-attachments/assets/b0b5dc5b-b280-4865-91ba-6783ca14441a" />
+
+Additionally, the Glossary Terms panel illustrates the direct semantic connections, showing exactly which business terms are mapped to this particular table.
+
+<img width="1884" height="719" alt="Screenshot (190)1" src="https://github.com/user-attachments/assets/af1ceb1d-0dc7-42d2-9305-6622a62a3edf" />
+
+
+
+![20260219_213521](https://github.com/user-attachments/assets/c55ffdaa-8cc9-4c63-9162-6dcb951d544c)
+
+
+
+
+
 
 
 
