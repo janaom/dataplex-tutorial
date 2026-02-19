@@ -297,23 +297,3 @@ Additionally, the Glossary Terms panel illustrates the direct semantic connectio
 
 <img width="1884" height="719" alt="Screenshot (190)1" src="https://github.com/user-attachments/assets/af1ceb1d-0dc7-42d2-9305-6622a62a3edf" />
 
-
-
-![20260219_213521](https://github.com/user-attachments/assets/c55ffdaa-8cc9-4c63-9162-6dcb951d544c)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
