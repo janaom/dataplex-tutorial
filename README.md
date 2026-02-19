@@ -258,7 +258,7 @@ Check Template inside the details.
 
 <img width="1912" height="779" alt="Screenshot 2026-02-19 171821" src="https://github.com/user-attachments/assets/3439095d-234c-449e-a5b7-73937e1942a5" />
 
-# Example
+# Example: Glossaries, Aspects, Terms
 
 Here is an example demonstrating how elements connect within Dataplex.
 
@@ -296,4 +296,41 @@ As you can see here, the asset is enriched with critical governance information.
 Additionally, the Glossary Terms panel illustrates the direct semantic connections, showing exactly which business terms are mapped to this particular table.
 
 <img width="1884" height="719" alt="Screenshot (190)1" src="https://github.com/user-attachments/assets/af1ceb1d-0dc7-42d2-9305-6622a62a3edf" />
+
+# Example: Lakes, Zones
+
+![20260219_223005](https://github.com/user-attachments/assets/6916d852-023a-4714-887f-ccc1b30b2a56)
+
+Under the Manage tab in Dataplex, I have configured one Data Lake containing two distinct assets.
+
+<img width="1905" height="304" alt="Screenshot (191)1" src="https://github.com/user-attachments/assets/d91f3a3b-eae5-45c6-81a5-32367a86a721" />
+
+This Data Lake is segmented into two Zones:
+
+    bq-data-prod: A curated zone designed for a BigQuery dataset.
+    raw-data-gcs: A raw zone designated for a Cloud Storage (GCS) bucket.
+
+<img width="1901" height="699" alt="Screenshot (192)1" src="https://github.com/user-attachments/assets/dcf89a9f-9bd2-4491-844b-c0620534626c" />
+
+The details view aggregates metrics from both zones, such as the total discovered file size.
+
+<img width="1895" height="761" alt="Screenshot (193)1" src="https://github.com/user-attachments/assets/e05884aa-8cfd-439e-93c4-2ebe0955218d" />
+
+Within each zone, specific assets are registered. For example, the bq-data-prod curated zone contains the BigQuery dataset named fin-data-prod.
+
+<img width="1904" height="709" alt="Screenshot (194)1" src="https://github.com/user-attachments/assets/e6257a2b-9b03-4e27-a29b-1c6cdae72ca5" />
+
+This view also displays the discovery configuration and status, showing that 10,000 rows have been discovered in this asset.
+
+<img width="1827" height="788" alt="Screenshot (195)1" src="https://github.com/user-attachments/assets/08798254-7ce4-42c3-8565-6ec587e5c38c" />
+
+Inside raw-data-gcs zone we have GCS bucket elt-prod.
+
+<img width="1895" height="713" alt="Screenshot (196)1" src="https://github.com/user-attachments/assets/29f063fd-d007-47d5-b9b4-3eec3d77375f" />
+
+Similarly, the raw-data-gcs zone contains the GCS bucket elt-prod, with a discovered data size of 718.72KiB.
+
+<img width="1718" height="789" alt="Screenshot (197)1" src="https://github.com/user-attachments/assets/40e6d254-6e04-4db8-be81-bf296a48e1c6" />
+
+
 
