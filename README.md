@@ -197,7 +197,66 @@ And here is AutoDQ Email Report.
 
 <img width="1475" height="767" alt="image" src="https://github.com/user-attachments/assets/95145d78-13a5-4e5b-89f7-06161e0dd097" />
 
+# Custom Aspect Types
 
+To create custom Aspects types, run these commands in your Cloud Shell terminal:
+
+```
+ACCESS_TOKEN=$(gcloud auth print-access-token)
+
+curl --request POST \
+  "https://dataplex.googleapis.com/v1/projects/your-project-id/locations/your-location/aspectTypes?aspectTypeId=data-stewardship-info" \   #e.g. location: europe-west1
+  --header "Authorization: Bearer $ACCESS_TOKEN" \
+  --header 'Accept: application/json' \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "displayName": "Data Stewardship Information",
+    "description": "Metadata related to data ownership and stewardship.",
+    "metadataTemplate": {
+      "name": "DataStewardshipTemplate",
+      "type": "record",
+      "recordFields": [
+        {
+          "name": "data_owner_email",
+          "type": "string",
+          "annotations": {
+            "displayName": "Data Owner Email",
+            "description": "Email address of the data owner."
+          },
+          "index": 1,
+          "constraints": { "required": true }
+        },
+        {
+          "name": "steward_team",
+          "type": "string",
+          "annotations": {
+            "displayName": "Stewardship Team",
+            "description": "Team responsible for data stewardship."
+          },
+          "index": 2
+        },
+        {
+          "name": "last_reviewed_date",
+          "type": "datetime",
+          "annotations": {
+            "displayName": "Last Reviewed Date",
+            "description": "Date when the data asset was last reviewed for governance."
+          },
+          "index": 3
+        }
+      ]
+    }
+  }' \
+  --compressed
+```
+
+You will create a new Aspect type.
+
+<img width="1903" height="676" alt="Screenshot 2026-02-19 171807" src="https://github.com/user-attachments/assets/27fa0d90-81fa-48a7-9fb4-5cbd20d369ed" />
+
+Check Template inside the details.
+
+<img width="1912" height="779" alt="Screenshot 2026-02-19 171821" src="https://github.com/user-attachments/assets/3439095d-234c-449e-a5b7-73937e1942a5" />
 
 
 
