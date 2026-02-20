@@ -18,6 +18,27 @@ This tutorial will guide you through setting up and using Dataplex to manage you
 
 I am using the same BQ table as in the previous tutorial [bq-data-masking-example](https://github.com/janaom/bq-data-masking-example).
 
+- [Data Catalog](https://github.com/janaom/dataplex-tutorial/blob/main/README.md#data-catalog)
+
+- [Entry details](https://github.com/janaom/dataplex-tutorial/blob/main/README.md#entry-details)
+
+- [Data Profile](https://github.com/janaom/dataplex-tutorial/blob/main/README.md#data-profile)
+
+- [Data Lineage](https://github.com/janaom/dataplex-tutorial/blob/main/README.md#data-lineage)
+
+- [Glossaries](https://github.com/janaom/dataplex-tutorial/blob/main/README.md#glossaries)
+
+- [Dataplex Lake/Zone Concept](https://github.com/janaom/dataplex-tutorial/blob/main/README.md#dataplex-lakezone-concept)
+
+- [Data Quality](https://github.com/janaom/dataplex-tutorial/blob/main/README.md#data-quality)
+
+- [Custom Aspect Types](https://github.com/janaom/dataplex-tutorial/blob/main/README.md#custom-aspect-types)
+
+- [Example: Glossaries, Aspects, Terms](https://github.com/janaom/dataplex-tutorial/blob/main/README.md#example-glossaries-aspects-terms)
+
+- [Example: Lakes, Zones](https://github.com/janaom/dataplex-tutorial/blob/main/README.md#example-lakes-zones)
+
+
 # Data Catalog
 
 Data Catalog in Dataplex provides a unified discovery platform that helps both technical and non-technical users quickly find and access data across the organization through searchable metadata. It ensures data quality consistency and regulatory compliance while reducing unnecessary costs, and enables organizations to trace data lineage to understand where data originated, how it was transformed, and who used it. Users can add rich text table descriptions, assign data stewards for metadata management, and establish clear ownership to improve trust and confidence in data assets. Additionally, Data Catalog integrates with Sensitive Data Protection to automatically identify and tag sensitive data using tag templates, centralizing governance and reducing search friction across the organization.
