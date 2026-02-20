@@ -359,3 +359,7 @@ Similarly, the raw-data-gcs zone contains the GCS bucket elt-prod, with a discov
 
 **Important**: If your lake is in europe-west1 and you create a zone in that same region, you cannot attach assets from the broader `EU` multi-region. Attempting to add a BigQuery dataset with location EU to a `europe-west1` zone will fail with the error: `BigQuery dataset location EU is invalid, allowed regions are {EUROPE-WEST1}`. The zone's initial location setting strictly defines which regional or multi-regional assets can be discovered and managed.
 
+Always pay attention to location compatibility: you cannot attach an aspect created in `europe-west1 (Belgium)` to a BigQuery table created in `EU`. You'll need to recreate the aspect in the `EU` multi-region to match your table's location.
+
+<img width="1911" height="789" alt="Screenshot 2026-02-20 135615" src="https://github.com/user-attachments/assets/ffd40507-e8df-4ed5-8476-24849e1611cc" />
+
