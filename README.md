@@ -332,5 +332,5 @@ Similarly, the raw-data-gcs zone contains the GCS bucket elt-prod, with a discov
 
 <img width="1718" height="789" alt="Screenshot (197)1" src="https://github.com/user-attachments/assets/40e6d254-6e04-4db8-be81-bf296a48e1c6" />
 
-
+**Important Requirement**: All components of a Dataplex, including the Data Lake, its Zones, and the underlying data assets, must share the same  location. Discovery will fail if you attempt to link an asset from a different region; for example, a Data Lake set to europe-west1 cannot ingest or discover data from a bucket residing in a different EU location.
 
