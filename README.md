@@ -355,7 +355,7 @@ Similarly, the raw-data-gcs zone contains the GCS bucket elt-prod, with a discov
 
 --------------
 
-**Critical Location Requirement**: Location configuration in Dataplex follows a strict hierarchy. When you create a Data Lake, you must specify its location (e.g., `europe-west1`), and this choice determines what data you can include. Zones within that lake can be configured as either regional (e.g., `europe-west1`) or multi-regional (e.g., `EU`), but their underlying data assets must align with the lake's location constraints.
+**Critical Location Requirement**: Location configuration in Dataplex follows a strict hierarchy. When you create a Data Lake, you must specify its location (e.g., `europe-west1`), and this choice determines what data you can include. Zones within that lake can be configured as either regional (e.g., `europe-west1`) or multi-regional (e.g., `EU`), but their underlying data assets must align with the zone's location constraints.
 
-**Important**: If your lake is in europe-west1 and you create a zone in that same region, you cannot attach assets from the broader `EU` multi-region. Attempting to add a BigQuery dataset with location EU to a `europe-west1` zone will fail with the error: `BigQuery dataset location EU is invalid, allowed regions are {EUROPE-WEST1}`. The lake's initial location setting strictly defines which regional or multi-regional assets can be discovered and managed.
+**Important**: If your lake is in europe-west1 and you create a zone in that same region, you cannot attach assets from the broader `EU` multi-region. Attempting to add a BigQuery dataset with location EU to a `europe-west1` zone will fail with the error: `BigQuery dataset location EU is invalid, allowed regions are {EUROPE-WEST1}`. The zone's initial location setting strictly defines which regional or multi-regional assets can be discovered and managed.
 
