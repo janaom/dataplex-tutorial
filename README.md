@@ -38,7 +38,7 @@ I am using the same BQ table as in the previous tutorial [bq-data-masking-exampl
 
 - [Example: Lakes, Zones](https://github.com/janaom/dataplex-tutorial/blob/main/README.md#example-lakes-zones)
 
-- [Important info]()
+- [Important info](https://github.com/janaom/dataplex-tutorial/blob/main/README.md#important-info)
 
 
 # Data Catalog
@@ -356,7 +356,7 @@ Similarly, the raw-data-gcs zone contains the GCS bucket elt-prod, with a discov
 <img width="1718" height="789" alt="Screenshot (197)1" src="https://github.com/user-attachments/assets/40e6d254-6e04-4db8-be81-bf296a48e1c6" />
 
 --------------
-# Important info
+# ❗Important info
 
 **Critical Location Requirement**: Location configuration in Dataplex follows a strict hierarchy. When you create a Data Lake, you must specify its location (e.g., `europe-west1`), and this choice determines what data you can include. Zones within that lake can be configured as either regional (e.g., `europe-west1`) or multi-regional (e.g., `EU`), but their underlying data assets must align with the zone's location constraints.
 
