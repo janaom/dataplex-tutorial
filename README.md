@@ -38,7 +38,7 @@ I am using the same BQ table as in the previous tutorial [bq-data-masking-exampl
 
 - [Example: Lakes, Zones](https://github.com/janaom/dataplex-tutorial/blob/main/README.md#example-lakes-zones)
 
-- [Important info]
+- [Important info]()
 
 
 # Data Catalog
